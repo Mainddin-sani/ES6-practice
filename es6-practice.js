@@ -49,3 +49,38 @@ const complexObject = {
 let { rodeNo } = complexObject.information;
 console.log(rodeNo);
 
+
+
+// truthy & falsy values
+
+
+
+// Truthy value //
+/*
+Number : 1 - 9 True;
+String: "0" True;
+String: " " true;
+String: "any word type" true;
+String: [] true;
+String: {} true;
+
+
+
+*/
+
+
+// False value //
+/*
+String: empty "" false;
+Number : 0 False;
+Primitive type: undefined
+Primitive type: null
+Primitive type: NaN
+*/ 
+var check_value = ;
+
+if (check_value) {
+    console.log("Condition is a True");
+} else {
+    console.log("Condition is a False")
+}
