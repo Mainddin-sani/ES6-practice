@@ -77,10 +77,34 @@ Primitive type: undefined
 Primitive type: null
 Primitive type: NaN
 */ 
-var check_value = ;
+var check_value = 0;
 
 if (check_value) {
     console.log("Condition is a True");
 } else {
     console.log("Condition is a False")
 }
+
+
+// null vs undefined
+ 
+function sum(num1, num2) {
+    console.log(num1 + num2);
+    // not set a return of undefined
+}
+
+const result = sum(12, 50);
+console.log(result);
+
+
+function sum(num1, num2) {
+    console.log(num1 + num2);
+    return
+}
+
+const result2 = sum(12, 10);
+console.log(result2);
+
+var arrayNum = [10, 20, 50];
+console.log(arrayNum[5]);
+
