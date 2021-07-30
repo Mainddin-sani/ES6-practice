@@ -108,3 +108,55 @@ console.log(result2);
 var arrayNum = [10, 20, 50];
 console.log(arrayNum[5]);
 
+
+// == vs ===
+
+let x = 2;
+let y = 3;
+if (x == y) {
+    console.log("condition is true");
+} else {
+    console.log("condition is false");
+}
+// output : false
+
+let num_2 = 2;
+let num_3 = '2';
+if (num_2 === num_3) {
+    console.log("condition is true");
+} else {
+    console.log("condition is false");
+}
+// output : false
+
+
+
+// 
+
+let student = [
+    { id: 30, name: "Mainuddin" },
+    {id: 20, name: "Sani"},
+    {id: 10, name: "Mithila"},
+       
+]
+
+console.log();
+
+let Store_name = [];
+
+for (let i = 0; i < student.length; i++) {
+    const element = student[i];
+    Store_name.push(element.name);
+}
+console.log(Store_name);
+
+
+let student_name_show = student.map(x => x.name);
+let student_id_show = student.map(x => x.id);
+let student_id_filter = student.filter(x => x.id > 10);
+let student_id_find = student.find(x => x.id > 10);
+console.log(student_name_show);
+console.log(student_id_show);
+console.log(student_id_filter);
+console.log(student_id_find);
+
